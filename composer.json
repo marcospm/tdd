@@ -1,0 +1,15 @@
+{
+  "name": "root/library",
+  "autoload": {
+    "psr-0": {"": "src/"}
+  },
+  "require": {
+    "phpunit/phpunit": "4.*"
+  },
+  "authors": [
+    {
+      "name": "Moein Akbarof",
+      "email": "moein.akbarof@trivago.com"
+    }
+  ]
+}
