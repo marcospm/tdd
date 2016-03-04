@@ -4,11 +4,11 @@ class FizzBuzz
 {
     public function get($number)
     {
-        if ($number == 3)
+        if ($number % 3 == 0)
         {
             return 'Fizz';
         }
-        elseif ($number == 5)
+        elseif ($number % 5 == 0)
         {
             return 'Buzz';
         }
