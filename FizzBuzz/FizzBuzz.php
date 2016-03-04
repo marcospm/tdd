@@ -4,16 +4,23 @@ class FizzBuzz
 {
     public function get($number)
     {
+        $result = null;
+
         if ($number % 3 == 0)
         {
-            return 'Fizz';
-        }
-        elseif ($number % 5 == 0)
-        {
-            return 'Buzz';
+            $result = 'Fizz';
         }
 
-        return $number;
+        if ($number % 5 == 0)
+        {
+            $result .= 'Buzz';
+        }
+
+        if (!$result) {
+            $result = $number;
+        }
+
+        return $result;
     }
 
     public function upTo($number)
@@ -24,5 +31,6 @@ class FizzBuzz
         }
 
         return implode(',', $list);
+
     }
 }
