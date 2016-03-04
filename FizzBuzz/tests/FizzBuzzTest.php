@@ -61,4 +61,9 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals('1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz', $this->oFizzBuzz->upTo('10'));
     }
+    
+     public function testExecute15()
+    {
+        $this->assertEquals('FizzBuzz', $this->oFizzBuzz->get(15));
+    }
 }
